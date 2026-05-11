@@ -1,0 +1,15 @@
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\bin\Debug\net10.0\Practica5.exe
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\bin\Debug\net10.0\Practica5.deps.json
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\bin\Debug\net10.0\Practica5.runtimeconfig.json
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\bin\Debug\net10.0\Practica5.dll
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\bin\Debug\net10.0\Practica5.pdb
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.AssemblyInfoInputs.cache
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.AssemblyInfo.cs
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.csproj.CoreCompileInputs.cache
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.sourcelink.json
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.dll
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\refint\Practica5.dll
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.pdb
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\Practica5.genruntimeconfig.cache
+C:\Lo que se ha visto en Programacion\Practicadearreglos\Practica5\obj\Debug\net10.0\ref\Practica5.dll
