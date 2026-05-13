@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica3\\Practica3.csproj": {}
+    "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica3\\Practica3.csproj": {}
   },
   "projects": {
-    "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica3\\Practica3.csproj": {
+    "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica3\\Practica3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica3\\Practica3.csproj",
+        "projectUniqueName": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica3\\Practica3.csproj",
         "projectName": "Practica3",
-        "projectPath": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica3\\Practica3.csproj",
+        "projectPath": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica3\\Practica3.csproj",
         "packagesPath": "C:\\Users\\Mari 1\\.nuget\\packages\\",
-        "outputPath": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica3\\obj\\",
+        "outputPath": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mari 1\\AppData\\Roaming\\NuGet\\NuGet.Config"

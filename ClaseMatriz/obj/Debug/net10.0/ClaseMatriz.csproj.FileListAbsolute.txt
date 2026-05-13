@@ -1,0 +1,15 @@
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\bin\Debug\net10.0\ClaseMatriz.exe
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\bin\Debug\net10.0\ClaseMatriz.deps.json
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\bin\Debug\net10.0\ClaseMatriz.runtimeconfig.json
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\bin\Debug\net10.0\ClaseMatriz.dll
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\bin\Debug\net10.0\ClaseMatriz.pdb
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.AssemblyInfoInputs.cache
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.AssemblyInfo.cs
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.csproj.CoreCompileInputs.cache
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.sourcelink.json
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.dll
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\refint\ClaseMatriz.dll
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.pdb
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ClaseMatriz.genruntimeconfig.cache
+C:\Lo que se ha visto en Programacion\C#claseclonereposit\ClaseMatriz\obj\Debug\net10.0\ref\ClaseMatriz.dll

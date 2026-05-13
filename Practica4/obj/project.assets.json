@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica4\\Practica4.csproj",
+      "projectUniqueName": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica4\\Practica4.csproj",
       "projectName": "Practica4",
-      "projectPath": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica4\\Practica4.csproj",
+      "projectPath": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica4\\Practica4.csproj",
       "packagesPath": "C:\\Users\\Mari 1\\.nuget\\packages\\",
-      "outputPath": "C:\\Lo que se ha visto en Programacion\\Practicadearreglos\\Practica4\\obj\\",
+      "outputPath": "C:\\Lo que se ha visto en Programacion\\practicasC#\\Practica4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mari 1\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,33 +1,44 @@
-﻿//Una librería necesita registrar las ventas de libros por categoría.
-string[] categorias = {"Novelas", "Ciencia", "Historia","Infantiles","Tecnología"};
+﻿// El objetivo es calcular el producto escalar entre ambos vectores para analizar su comportamiento.
 
-int[] ventas = new int[5]; int totalVentas = 0;
-int mayorVenta; int posicionMayor = 0;
-double promedio =0;
+int[] vector1 = new int [5];
+int[] vector2 = new int [5];
+double productoEscalar = 0;
 
-Console.WriteLine("Inventario de ventas por categoria: ");
-for (int i = 0; i < ventas.Length; i++)
+Console.Clear();
+Console.WriteLine("Ingresa los valores del primer vector:");
+for (int i = 0; i < vector1.Length; i++)
 {
-    Console.Write($"Ingrese la cantidad de libros vendidos en {categorias[i]}: ");
-    ventas[i] = int.Parse(Console.ReadLine()!);
-
-    totalVentas += ventas[i];
-}
-
-mayorVenta = ventas[0];
-for (int i = 1; i < ventas.Length; i++)
-{
-    if (ventas[i] > mayorVenta)
+    try
     {
-        mayorVenta = ventas[i];
-        posicionMayor = i;
+        Console.Write($"Valor {i + 1}: ");
+        vector1[i] = int.Parse(Console.ReadLine()!);
+}
+    catch (FormatException)
+    {
+        Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero.");
+        i--; // Decrementar el índice para volver a solicitar la entrada
     }
 }
 
-promedio = (double)totalVentas / ventas.Length;
+Console.WriteLine("Tio ingresa el valor del segundo vector, vale :D");
+for (int i =0; i < vector2.Length; i++)
+{
+    try
+    {
+        Console.WriteLine($"Valor {i + 1}: ");
+        vector2[i] = int.Parse(Console.ReadLine()!);
+    }
+    catch (FormatException)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Error: Entrada no valida.Por favor, ingresa un número, Pli :C.");
+        i--; // Decrementar el índice para volver a solicitar el valor
+        Console.ResetColor();
+    }
 
-Console.WriteLine($"\nTotal de ventas: {totalVentas}");
-Console.WriteLine($"Promedio de ventas por categoría: {promedio:F2}");
-Console.WriteLine($"Categoría con más ventas: {categorias[posicionMayor]}");
-Console.WriteLine($"Cantidad vendida: {mayorVenta}");
-Console.WriteLine($"Promedio de ventas: {promedio:F2}");
+    //Producto escalar
+
+    productoEscalar += vector1[i] * vector2[i];
+}
+
+Console.WriteLine($"El producto escalar entre ambos vectores es: {productoEscalar}");

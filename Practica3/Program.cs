@@ -1,51 +1,26 @@
-﻿//Un jugador desea almacenar los puntajes obtenidos en diferentes partidas.
+﻿// El equipo de ingeniería necesita calcular la magnitud total del vector de movimiento para validar la trayectoria recorrida.
 
-int[] puntajes = new int[6];
-int puntajeMaximo = 0;
-int conteo = 0;
+int[] vector = new int[5];
+int sumaCuadrados = 0;
+double magnitud = 0;
 
-Console.WriteLine("Ingrese los 6 puntajes de las partidas: ");
-for (int i =0; i < 6; i++)
+Console.Clear();
+Console.WriteLine("Tio, ingresa los valores del vector, Pli :D");
+for (int i = 0; i < vector.Length; i++)
 {
-    Console.Write($"Puntaje obtenido en la partida {i+1}: ");
-    puntajes[i]= int.Parse(Console.ReadLine()!);
-
-}
-Console.WriteLine("\nLos puntajes obtenidos en las partidas son: ");
-
-//Mostrar los puntajes
-
-foreach (int puntaje in puntajes)
-{
-    Console.WriteLine(puntaje);
-}
-
-//Puntaje mas alto
-
-puntajeMaximo = puntajes[0];
-for (int i = 1; i < puntajes.Length; i++)
-{
-    if (puntajes[i] > puntajeMaximo)
+    try
     {
-        puntajeMaximo = puntajes[i];
-    }
+        Console.Write($"Valor {i + 1}: ");
+        vector[i] = int.Parse(Console.ReadLine()!);
 }
-Console.WriteLine($"\nEl puntaje mas alto es: {puntajeMaximo}");
-
-//Ordenar de menor a mayor
-Array.Sort(puntajes);
-Console.WriteLine("Los puntajes ordenados de menor a mayor son:");
-foreach (int puntaje in puntajes)
-{
-    Console.WriteLine(puntaje);
-}
-
-conteo= 0;
-for (int i = 0; i < puntajes.Length; i++)
-{
-    if (puntajes[i] > 500)
+    catch (FormatException)
     {
-        conteo++;
+        Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero.");
+        i--; // Decrementar el índice para volver a solicitar la entrada
     }
+    sumaCuadrados += vector[i] * vector[i];// Suma de los cuadrados de los elementos del vector
+
+    magnitud = Math.Sqrt(sumaCuadrados);
 }
-Console.WriteLine($"\nEl numero de puntajes mayores a 500 es: {conteo}");
+
+    Console.WriteLine($"La magnitud total de el vector en movimiento es {magnitud}");

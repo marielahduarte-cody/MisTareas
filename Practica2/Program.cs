@@ -1,27 +1,54 @@
-﻿//Una tienda desea registrar las ventas diarias de una semana.
-double ventasdiarias= 0;
-string dias = "Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo";
-double totalvendido = 0;
-int diasSuperiores150 = 0;
-double ventaMinima = 0;
+﻿//Un sistema de monitoreo industrial registra diferencias de producción entre dos máquinas durante cinco períodos consecutivos. 
+//El departamento técnico necesita calcular la diferencia entre ambos vectores.
 
-Console.WriteLine("Ingrese las ventas diarias de la semana:");
-for (int i = 0; i < 7; i++)
+int[] vector1 = new int[5];
+int[] vector2 = new int[5];
+int[] vectoresta = new int[5];
+
+Console.Clear();
+Console.WriteLine("Ingrese el valor de el primer vector 1:");
+for (int i = 0; i < vector1.Length; i++)
 {
-    Console.WriteLine($"Ingrese las ventas del dia {dias.Split(",")[i]}");
-    ventasdiarias = Convert.ToDouble(Console.ReadLine()!);
-
-    totalvendido += ventasdiarias;
-        if (ventasdiarias > 150)
-        {
-            diasSuperiores150++;
-        }
-        if (ventasdiarias < ventaMinima || i == 0)
-        {
-            ventaMinima = ventasdiarias;
-        }
+    try
+    {
+        Console.Write($"Valor {i + 1}: ");
+        vector1[i] = int.Parse(Console.ReadLine()!);
 }
+    catch (FormatException)
+    {
+        Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero.");
+        i--; // Decrementar el índice para volver a solicitar la entrada
+    }
+}
+    
+Console.WriteLine("Tio ingresa el valor del segundo vector, vale :D");
+for (int i =0; i < vector2.Length; i++)
+{
+    try
+    {
+        Console.WriteLine($"Valor {i + 1}: ");
+        vector2[i] = int.Parse(Console.ReadLine()!);
+    }
+    catch (FormatException)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Error: Entrada no valida.Por favor, ingresa un número, Pli :C.");
+        i--; // Decrementar el índice para volver a solicitar el valor
+        Console.ResetColor();
+    }
+   
+}
+    //Resta los vectores
+    for(int i = 0; i < vectoresta.Length; i++)
+    {
+        vectoresta[i] = vector1[i] - vector2[i];
+    }
 
-Console.WriteLine($"El total vendido en la semana es {totalvendido}");
-Console.WriteLine($"El numero de dias con ventas superiores a 150 es {diasSuperiores150}");
-Console.WriteLine($"La venta minima registrada en la semana es {ventaMinima}");
+    //Muestra el arreglo resultante
+    Console.WriteLine("Resta de vectores: ");
+    for (int i = 0; i < vectoresta.Length; i++)
+    {
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine($"Valor {i + 1}: {vectoresta[i]}");
+    }
+    Console.ResetColor();

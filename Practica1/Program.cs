@@ -1,46 +1,56 @@
-﻿//Una estación meteorológica necesita registrar las temperaturas máximas de 7 días.
+﻿//Una empresa de logística utiliza un sistema de posicionamiento para registrar desplazamientos realizados por un dron durante cinco intervalos de tiempo.
+//El sistema necesita sumar dos vectores para calcular el desplazamiento total acumulado.
 
-int[] temperaturasMaximas = new int [7];
-int sumaTemperaturas = 0;
-double promedio = 0;
-int temperaturamasalta =0;
-int temperaturamasbaja = 0;
+int[] vector1 = new int[5];
+int[] vector2 = new int[5];
+int[] vectorsuma = new int[5];
 
-for (int i =0; i < temperaturasMaximas.Length; i++)
+Console.Clear();
+Console.WriteLine("Tio ingresa los valores del primer vector");
+for (int i = 0; i < vector1.Length; i++)
 {
-    Console.WriteLine($"Ingrese el valor de la temperatura máxima del día {i + 1}: ");
-    temperaturasMaximas[i] = int.Parse(Console.ReadLine()!);
-    sumaTemperaturas += temperaturasMaximas[i];
-}
-
-Console.WriteLine("Las temperaturas máximas registradas son: ");
-for (int i = 0; i < temperaturasMaximas.Length; i++)
-{
-    Console.WriteLine($"Día {i + 1}: {temperaturasMaximas[i]}C");
-}
-
-//Promedio de las temperaturas
-promedio = sumaTemperaturas / temperaturasMaximas.Length;
-Console.WriteLine($"El promedio de las temperaturas es: {promedio}C");
-
-//Indicar la temperatura mas alta.
-temperaturamasalta = temperaturasMaximas[0];
-for (int i = 1; i < temperaturasMaximas.Length; i++)
-{
-    if (temperaturasMaximas[i] > temperaturamasalta)
+    try
     {
-        temperaturamasalta = temperaturasMaximas[i];
+        Console.WriteLine($"Valor {i + 1}:");
+        vector1[i] = int.Parse(Console.ReadLine()!);
+    }
+    catch (FormatException)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Error: Entrada no valida.Por favor, ingresa un número, Pli :C.");
+        i--; // Decrementar el índice para volver a solicitar el valor
+        Console.ResetColor();
     }
 }
-Console.WriteLine($"La temperatura más alta es: {temperaturamasalta}C");
 
-//Indicar la temperatura mas baja.
-temperaturamasbaja = temperaturasMaximas[0];
-for (int i = 1; i < temperaturasMaximas.Length; i++)
+Console.WriteLine("Tio ingresa el valor del segundo vector, ostia :D");
+for (int i =0; i < vector2.Length; i++)
 {
-    if (temperaturasMaximas[i] < temperaturamasbaja)
+    try
     {
-        temperaturamasbaja = temperaturasMaximas[i];
+        Console.WriteLine($"Valor {i + 1}: ");
+        vector2[i] = int.Parse(Console.ReadLine()!);
     }
+    catch (FormatException)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Error: Entrada no valida.Por favor, ingresa un número, Pli :C.");
+        i--; // Decrementar el índice para volver a solicitar el valor
+        Console.ResetColor();
+    }
+   
 }
-Console.WriteLine($"La temperatura más baja es: {temperaturamasbaja}C");
+    //Suma los vectores
+    for(int i = 0; i < vectorsuma.Length; i++)
+    {
+        vectorsuma[i] = vector1[i] + vector2[i];
+    }
+
+    //Muestra el arreglo resultante
+    Console.WriteLine("Suma de vectores: ");
+    for (int i = 0; i < vectorsuma.Length; i++)
+    {
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine($"Valor {i + 1}: {vectorsuma[i]}");
+    }
+    Console.ResetColor();
